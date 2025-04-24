@@ -14,8 +14,8 @@ const ProductTitle = () => {
                         <h2 className="page__title">{product.title}</h2>
                         <nav aria-label="breadcrumb">
                               <ol className="breadcrumb">
-                                 <li className="breadcrumb-item"><Link href="/home"><a >Home</a></Link></li>
-                                 <li className="breadcrumb-item"><Link href="/product"><a >Product</a></Link></li>
+                                 <li className="breadcrumb-item"><Link href="/home"><a >Anasayfa</a></Link></li>
+                                 <li className="breadcrumb-item"><Link href="/product"><a >Ürün</a></Link></li>
                                  <li className="breadcrumb-item active" aria-current="page">Current</li>
                               </ol>
                            </nav>

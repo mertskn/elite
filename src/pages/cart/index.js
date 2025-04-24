@@ -45,20 +45,20 @@ const ProductCart = () => {
    // handleClearCart
    const handleClearCart = () => {
       Swal.fire({
-         title: 'Are you sure?',
-         text: "Deleted your all cart items",
+         title: 'Eminmisin?',
+         text: "Bütün ürünlerin silinecek",
          icon: 'warning',
          showCancelButton: true,
          confirmButtonColor: '#3085d6',
          cancelButtonColor: '#d33',
-         confirmButtonText: 'Yes, delete it!'
+         confirmButtonText: 'Evet, sepeti boşalt!'
       }).then((result) => {
          if (result.isConfirmed) {
             dispatch(clearCart());
             setMountedCart(false);
             Swal.fire(
-               'Deleted!',
-               'Your cart items has been deleted.',
+               'Başarılı!',
+               'Sepetteki tüm ürünler silindi.',
                'success'
             )
          }
@@ -89,7 +89,7 @@ const ProductCart = () => {
          <SEO pageTitle={'Cart'} />
          <Header />
          <BgShape />
-         <Breadcrumb name="Your Cart" title="Cart" />
+         <Breadcrumb name="Sepetin" title="Cart" />
          {errorMsg && <ErrorMsg />}
          {mountedCart && <section className="cart-area pb-100">
             <div className="container">
@@ -101,12 +101,12 @@ const ProductCart = () => {
                            <table className="table">
                               <thead>
                                  <tr>
-                                    <th className="product-thumbnail">Images</th>
-                                    <th className="cart-product-name">Product</th>
-                                    <th className="product-price">Unit Price</th>
-                                    <th className="product-quantity">Quantity</th>
-                                    <th className="product-subtotal">Total</th>
-                                    <th className="product-remove">Remove</th>
+                                    <th className="product-thumbnail">Ürün resmi</th>
+                                    <th className="cart-product-name">Ürün</th>
+                                    <th className="product-price">Fiyat</th>
+                                    <th className="product-quantity">Adet</th>
+                                    <th className="product-subtotal">Toplam</th>
+                                    <th className="product-remove">Çıkar</th>
                                  </tr>
                               </thead>
                               <tbody className='border-0'>
@@ -125,10 +125,10 @@ const ProductCart = () => {
                               <div className="coupon-all">
                                  <div className="coupon">
                                     <input id="coupon_code" required className="input-text" name="coupon_code" defaultValue="" placeholder="Coupon code" type="text" />
-                                    <button className="m-btn m-btn-border-2 cta__btn active" name="apply_coupon" type="submit">Apply coupon</button>
+                                    <button className="m-btn m-btn-border-2 cta__btn active" name="apply_coupon" type="submit">Kupon Kullan</button>
                                  </div>
                                  <div className="coupon2">
-                                    <button onClick={handleClearCart} className="m-btn m-btn-border-2 cta__btn active" name="update_cart" type="button">Clear cart</button>
+                                    <button onClick={handleClearCart} className="m-btn m-btn-border-2 cta__btn active" name="update_cart" type="button">Sepeti boşalt</button>
                                  </div>
                               </div>
                            </div>
@@ -136,13 +136,12 @@ const ProductCart = () => {
                         <div className="row justify-content-end">
                            <div className="col-md-5">
                               <div className="cart-page-total">
-                                 <h2>Cart totals</h2>
+                                 <h2>Sepet toplam</h2>
                                  <ul className="mb-20">
-                                    <li>Subtotal <span>${total}</span></li>
-                                    <li>Total <span>${total}</span></li>
+                                    <li>Toplam <span>${total}</span></li>
                                  </ul>
                                  <Link href="/checkout">
-                                    <a className="m-btn m-btn-border-2 cta__btn active">Proceed to checkout</a>
+                                    <a className="m-btn m-btn-border-2 cta__btn active">Güvenli öde</a>
                                  </Link>
                               </div>
                            </div>
