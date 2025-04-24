@@ -3,49 +3,49 @@ import SingleBlog from './SingleBlog';
 
 const BlogArea = () => {
    return (
-      <>
-            <section className="blog__area pt-105 pb-110">
-            <div className="container">
-               <div className="row">
-                  <div className="col-xxl-11 offset-xxl-1">
-                     <div className="section__title-wrapper mb-65">
-                        <h2 className="section__title">Latest blog</h2>
-                        <p>A load of old tosh the full monty sloshed pukka squiffy.</p>
-                     </div>
-                  </div>
-               </div>
-               <div className="row">
-                  <div className="col-xxl-11 offset-xxl-1 col-xl-11">
-                     <div className="row">
-                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                          
-                           <SingleBlog title="He lost his bottle hanky panky that super mufty spiffing bobby pardon me geeza lemon." />
+       <>
+          <section className="blog__area pt-105 pb-110">
+             <div className="container">
+                <div className="row">
+                   <div className="col-xxl-11 offset-xxl-1">
+                      <div className="section__title-wrapper mb-65">
+                         <h2 className="section__title">Son blog yazıları</h2>
+                         <p>Bir sürü eski saçmalık, her şey dahil, sarhoş, birinci sınıf, biraz sersemlemiş.</p>
+                      </div>
+                   </div>
+                </div>
+                <div className="row">
+                   <div className="col-xxl-11 offset-xxl-1 col-xl-11">
+                      <div className="row">
+                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
 
-                           <SingleBlog title="Oxford super are you taking the piss me old mucker boot owt to do with me the bee's knees." />
+                            <SingleBlog title="Cesaretini kaybetti, gizli saklı şeyler, o süper havalı, şık, polis, affedersiniz, ahbap, limon." />
 
-                           <SingleBlog title="David, it's your round wellies sloshed only a quid bubble and squeak mufty chap." />
+                            <SingleBlog title="Oxford süper, benimle dalga mı geçiyorsun eski dostum, benimle alakası yok, harika." />
 
-                           <SingleBlog title="Jeffrey faff about A bit of how's your father he lost his bottle, butty cras skive off I give." />
-                          
-                        </div>
+                            <SingleBlog title="David, sıra sende, çizme, sarhoş, sadece bir lira, boş konuşma, havalı adam." />
 
-                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                            <SingleBlog title="Jeffrey oyalanıyor, nasılsın bakalım, cesaretini kaybetti, arkadaşım, gizlice kaç, umrumda değil." />
 
-                        <SingleBlog title="Jeffrey faff about A bit of how's your father he lost his bottle, butty cras skive off I give." />
+                         </div>
 
-                        <SingleBlog title="Lurgy don't get shirty with me blower posh porkies spend a penny tickety boo mufty ." />
+                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
 
-                        <SingleBlog title="He lost his bottle hanky panky that super mufty spiffing bobby pardon me geeza lemon." />
+                            <SingleBlog title="Soğuk algınlığı, bana ters davranma, aptalca konuşma, şık, yalanlar, beş kuruşsuz, tıkır tıkır, havalı." />
 
-                        <SingleBlog title="Oxford super are you taking the piss me old mucker boot owt to do with me the bee's knees." />
-                        
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </>
+                            <SingleBlog title="Cesaretini kaybetti, gizli saklı şeyler, o süper havalı, şık, polis, affedersiniz, ahbap, limon." />
+
+                            <SingleBlog title="Oxford süper, benimle dalga mı geçiyorsun eski dostum, benimle alakası yok, harika." />
+
+                            <SingleBlog title="Jeffrey oyalanıyor, nasılsın bakalım, cesaretini kaybetti, arkadaşım, gizlice kaç, umrumda değil." />
+
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </section>
+       </>
    );
 };
 

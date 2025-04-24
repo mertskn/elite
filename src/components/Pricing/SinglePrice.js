@@ -8,27 +8,27 @@ const SinglePrice = ({ title, price, activeClass = '' }) => {
                 <div className={`pricing__item ${activeClass && activeClass} text-center transition-3 mb-30`}>
                     <div className="pricing__header mb-25">
                         <h3>{title}</h3>
-                        <p>What You Are Looking For!</p>
+                        <p>Aradığınız Şey!</p>
                     </div>
                     <div className="pricing__tag d-flex align-items-start justify-content-center mb-30">
                         <span>$</span>
                         <h4>{price}</h4>
                     </div>
                     <div className="pricing__switch mb-10">
-                        <button type="button">Switch to yearly billing</button>
+                        <button type="button">Yıllık faturalamaya geç</button>
                     </div>
                     <div className="pricing__buy mb-20">
                         <Link href="/pricing">
-                            <a className="m-btn m-btn-border m-btn-border-5 w-100"> <span></span> Buy Now</a>
+                            <a className="m-btn m-btn-border m-btn-border-5 w-100"> <span></span> Şimdi Satın Al</a>
                         </Link>
                     </div>
                     <div className="pricing__features text-start">
                         <ul>
-                            <li>Powerful Admin Panel</li>
-                            <li>1 Native Android App</li>
-                            <li>Multi-Language Support</li>
-                            <li>Free SSL Certificate</li>
-                            <li>1X Allocated Resources</li>
+                            <li>Güçlü Yönetim Paneli</li>
+                            <li>1 Yerel Android Uygulaması</li>
+                            <li>Çoklu Dil Desteği</li>
+                            <li>Ücretsiz SSL Sertifikası</li>
+                            <li>1X Ayrılmış Kaynak</li>
                         </ul>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const Breadcrumb = ({ name, title }) => {
                      <h2 className="page__title">{name}</h2>
                      <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
-                           <li className="breadcrumb-item"><Link href="/home"><a >Home</a></Link></li>
+                           <li className="breadcrumb-item"><Link href="/home"><a >Anasayfa</a></Link></li>
                            <li className="breadcrumb-item active" aria-current="page">{title}</li>
                         </ol>
                      </nav>
